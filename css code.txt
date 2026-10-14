@@ -1,4 +1,4 @@
-
+%%writefile styles.css
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #74ebd5, #acb6e5);
@@ -17,8 +17,10 @@ body {
 }
 
 h1 {
-    color: #333399;
-    font-size: 32px;
+    color: #ff5722;
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    animation: fadeInDown 1.5s ease-out;
 }
 
 p {
@@ -37,4 +39,16 @@ button {
 
 button:hover {
     background-color: #5555cc;
+}
+
+/* Define the fade-in and slide-down animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

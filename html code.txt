@@ -1,4 +1,4 @@
-
+%%html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,9 +46,13 @@
     <div class="container">
         <h1>Welcome to My Website!</h1>
         <p>This is my first HTML webpage.</p>
-        <button onclick="alert('Hello! Welcome!')">
+        <!-- Call the function defined in our external file -->
+        <button onclick="showAlert()">
             Click Me
         </button>
     </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
